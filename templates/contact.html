@@ -1,0 +1,154 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<section class="contact-hero dark-background">
+  <div class="container text-center" data-aos="fade-up">
+    <span class="text-uppercase tracking-widest text-teal mb-3 d-block" style="color: #00B3A6; letter-spacing: 3px;">Global Engagement</span>
+    <h1 class="display-4 fw-bold">Initiate the Awakening</h1>
+    <p class="lead mt-3 mx-auto col-lg-8">Connect with our strategic consultants to discuss how Binjaz can transform your organization's performance and culture.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row gy-5">
+
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="contact-info-card">
+          <h3 class="mb-4 text-dark fw-bold">Strategic Briefing Center</h3>
+
+          <div class="info-item mb-4">
+            <i class="bi bi-geo-alt"></i>
+            <h5>Location</h5>
+            <p>Karachi, Pakistan</p>
+          </div>
+
+          <div class="info-item mb-4">
+            <i class="bi bi-envelope-at"></i>
+            <h5>Direct Inquiries</h5>
+            <p>consulting@binjaz.co</p>
+          </div>
+
+          <div class="info-item mb-4">
+            <i class="bi bi-telephone"></i>
+            <h5>Briefing Coordination</h5>
+            <p>+123 456 7890</p>
+          </div>
+
+          <div class="social-links mt-5">
+              <p class="social-title">Connect:</p>
+              <a href="https://www.linkedin.com/company/binjaz/" target="_blank" title="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61588308594090" target="_blank" title="Facebook">
+                <i class="bi bi-facebook"></i>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="contact-form-container">
+          <form action="{{ url_for('contact') }}" method="post">
+            <div class="row">
+              <div class="col-md-6 form-group-elite">
+                <input type="text" name="name" class="form-control-elite" required>
+                <label class="form-label-elite">Full Name</label>
+              </div>
+              <div class="col-md-6 form-group-elite">
+                <input type="email" name="email" class="form-control-elite" required>
+                <label class="form-label-elite">Corporate Email</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 form-group-elite">
+                <input type="text" name="organization" class="form-control-elite" required>
+                <label class="form-label-elite">Organization Name</label>
+              </div>
+              <div class="col-md-6 form-group-elite">
+                <input type="text" name="designation" class="form-control-elite" required>
+                <label class="form-label-elite">Designation / Role</label>
+              </div>
+            </div>
+
+            <div class="form-group-elite">
+              <select name="interest" class="form-control-elite" required style="border-bottom: 2px solid #e0e0e0;">
+                <option value="" disabled selected></option>
+                <option value="training">Training Programs</option>
+                <option value="consulting">Strategic Consulting</option>
+                <option value="hr-systems">HR & Organizational Systems</option>
+                <option value="other">General Inquiry</option>
+              </select>
+              <label class="form-label-elite" style="top: -15px; font-size: 0.7rem; color: #00B3A6; font-weight: 700;">Service of Interest</label>
+            </div>
+
+            <div class="form-group-elite">
+              <textarea class="form-control-elite" name="message" rows="4" required></textarea>
+              <label class="form-label-elite">Strategic Context / Message</label>
+            </div>
+
+            <div class="text-center mt-4">
+              <button type="submit" class="btn-briefing" id="submitBtn">
+                <span id="btnText">Request Capability Briefing</span>
+                <span id="btnSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="container-fluid p-0 mt-5" data-aos="fade-up">
+  <div style="filter: grayscale(100%) invert(90%) contrast(150%);">
+    <iframe style="border:0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d
+    231647.78850616113!2d66.9048384!3d24.8614622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06602d4ca7%3
+    A0xad23315a77c73c24!2sKarachi%2C+Sindh%2C+Pakistan!5e0!3m2!1sen!2s!5m2!1sen!2s" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+ <div class="toast-container-elite">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              <div class="toast-elite {{ 'error' if category == 'danger' else '' }}" role="alert" data-aos="fade-left">
+                <div class="toast-header-elite">
+                  <strong>System Notification</strong>
+                  <button type="button" class="btn-close small" onclick="this.parentElement.parentElement.remove()"></button>
+                </div>
+                <div class="toast-body" style="font-size: 0.9rem; color: #555;">
+                  {{ message }}
+                </div>
+              </div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+      </div>
+
+      <script>
+        setTimeout(function() {
+          let toasts = document.querySelectorAll('.toast-elite');
+          toasts.forEach(toast => {
+            toast.style.transition = "0.5s";
+            toast.style.opacity = "0";
+            setTimeout(() => toast.remove(), 500);
+          });
+        }, 5000); // Disappears after 5 seconds
+      </script>
+      <script>
+        document.querySelector('form').addEventListener('submit', function() {
+          const btn = document.getElementById('submitBtn');
+          const text = document.getElementById('btnText');
+          const spinner = document.getElementById('btnSpinner');
+
+          // Disable button to prevent multiple clicks
+          btn.disabled = true;
+          // Hide text and show spinner
+          text.classList.add('d-none');
+          spinner.classList.remove('d-none');
+        });
+      </script>
+
+{% endblock %}

@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<section class="about-hero-minimal dark-background">
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="col-lg-10">
+        <span class="text-uppercase tracking-widest text-teal mb-3 d-block" style="color: #00B3A6;">The Binjaz Philosophy</span>
+        <h1 class="display-3 fw-bold">Excellence is not a skill <br><span class="text-gradient">It is your original state.</span></h1>
+        <p class="lead mt-4 col-lg-8">We don't teach excellence. We uncover it by stripping away the limiting beliefs and unconscious patterns that hide the potential of your organization.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="problem-section section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5" data-aos="fade-right">
+        <h2 class="section-heading">The Invisible Cost of <span class="text-accent">Mediocrity</span></h2>
+        <p class="mt-4">Most corporate training is a "patch" on a broken system. It adds information without changing behavior. At Binjaz, we address the root cause: the internal landscape of the individual.</p>
+      </div>
+      <div class="col-lg-6 offset-lg-1" data-aos="fade-left">
+        <div class="image-stack">
+          <img src="{{ url_for('static', filename='img/about.jpg') }}" class="img-main" alt="Professional Focus">
+          <div class="accent-box"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="path-section section light-background">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>The Methodology</h2>
+      <div><span>The Four Gates of</span> <span class="description-title">Awakening</span></div>
+    </div>
+
+    <div class="vertical-path">
+      <div class="path-item" data-aos="fade-up">
+        <div class="path-number">01</div>
+        <div class="path-content">
+          <h4>Deep Reflection</h4>
+          <p>We begin by auditing the internal landscape—identifying the silent "limiting beliefs" that stall organizational growth.</p>
+        </div>
+      </div>
+      <div class="path-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="path-number">02</div>
+        <div class="path-content">
+          <h4>Values Alignment</h4>
+          <p>Using the AMAL framework, we align individual purpose with corporate objectives to create genuine ownership.</p>
+        </div>
+      </div>
+      <div class="path-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="path-number">03</div>
+        <div class="path-content">
+          <h4>Behavioral Calibration</h4>
+          <p>Real-world application of the Six Elements of Work Ethics. We move from "knowing" to "doing."</p>
+        </div>
+      </div>
+      <div class="path-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="path-number">04</div>
+        <div class="path-content">
+          <h4>Sustainable Excellence</h4>
+          <p>The result is a culture that operates from a state of excellence by default, not by effort.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="manifesto section dark-background">
+  <div class="container text-center" data-aos="zoom-in">
+    <div class="col-lg-8 mx-auto">
+      <blockquote class="blockquote-custom">
+        <i class="bi bi-quote mb-4"></i>
+        <p class="mb-5">"Binjaz exists to bridge the gap between human potential and workplace efficiency. We aren't just a training firm; we are the architects of your organization's next era."</p>
+      </div>
+      <a href="{{ url_for('contact') }}" class="cta-btn-premium">Request a Capability Briefing</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

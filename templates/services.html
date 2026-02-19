@@ -1,0 +1,267 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<section class="services-hero dark-background">
+  <div class="container text-center" data-aos="fade-up">
+    <h1>Our Training Programs</h1>
+    <p>Binjaz bridge the gap between human potential and workplace efficiency.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="section-title" data-aos="fade-up">
+      <h2>Training Programs</h2>
+    </div>
+
+    <div class="row gy-5 mb-5">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="service-card" data-bs-toggle="modal" data-bs-target="#modal1">
+          <img src="{{ url_for('static', filename='img/services/service-1.png') }}" alt="">
+          <div class="service-card-body text-center">
+            <h4>Foundations of Personal Excellence</h4>
+            <p>Purpose-driven, self-aware individuals.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card" data-bs-toggle="modal" data-bs-target="#modal2">
+          <img src="{{ url_for('static', filename='img/services/service-2.png') }}" alt="">
+          <div class="service-card-body text-center">
+            <h4>Character Development Program</h4>
+            <p>Trustworthy, disciplined performers.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card" data-bs-toggle="modal" data-bs-target="#modal3">
+          <img src="{{ url_for('static', filename='img/services/service-3.png') }}" alt="">
+          <div class="service-card-body text-center">
+            <h4>AMAL Goal-Setting Framework</h4>
+            <p>Values-driven, action-oriented goal setting.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="service-card" data-bs-toggle="modal" data-bs-target="#modal4">
+          <img src="{{ url_for('static', filename='img/services/service-4.png') }}" alt="">
+          <div class="service-card-body text-center">
+            <h4>Selling Skills</h4>
+            <p>Ethical, relationship-based selling.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card" data-bs-toggle="modal" data-bs-target="#modal5">
+          <img src="{{ url_for('static', filename='img/services/service-5.png') }}" alt="">
+          <div class="service-card-body text-center">
+            <h4>Customer Relationship Management</h4>
+            <p>Communication excellence and empathy.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card" data-bs-toggle="modal" data-bs-target="#modal6">
+          <img src="{{ url_for('static', filename='img/services/service-6.png') }}" alt="">
+          <div class="service-card-body text-center">
+            <h4>Leadership Development</h4>
+            <p>Effective leaders and sustainable culture.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title mt-5" data-aos="fade-up">
+      <h2>HR & Organizational Development</h2>
+    </div>
+
+    <div class="row gy-5 justify-content-center">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="service-card" data-bs-toggle="modal" data-bs-target="#modal7">
+          <img src="{{ url_for('static', filename='img/services/service-7.png') }}" alt="HR Development">
+          <div class="service-card-body text-center">
+            <h4>HR & Organizational Development Systems</h4>
+            <p>Structured, ethical, and high-performing people systems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="modal fade" id="modal1" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header border-0"><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body p-5">
+        <img src="{{ url_for('static', filename='img/services/service-1.png') }}" class="modal-img-wide">
+        <h2 class="mb-3">Foundations of Personal Excellence</h2>
+        <p><strong>The Concept:</strong> This foundational module is designed to help individuals re-center their professional lives by clarifying their core purpose and intent. By mastering the focus of attention and broadening one's "Horizon of Life" through the lens of humility, participants learn to operate from their natural state of excellence.</p>
+        <p><strong>Core Pillars:</strong> Purpose & Intent, Focus of Attention, Horizon of Life, and Humility.</p>
+        <p><strong>Primary Outcome:</strong> Transformation into purpose-driven, self-aware individuals who lead with clarity and intent.</p>
+        <div class="text-center mt-4">
+          <a href="/register" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Register for this Program</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal2" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header border-0"><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body p-5">
+        <img src="{{ url_for('static', filename='img/services/service-2.png') }}" class="modal-img-wide">
+        <h2 class="mb-3">Character Development – Six Elements of Work Ethics</h2>
+        <p><strong>The Concept:</strong> True workplace efficiency is a byproduct of integrity. This program dives deep into the behavioral elements that define a high-performing professional. We focus on transforming daily habits into a cohesive ethical framework that builds trust and fosters a culture of ownership.</p>
+        <p><strong>The Six Elements:</strong> Integrity, Communication, Time Management, Attention to Detail, Ownership, and Healthy Living.</p>
+        <p><strong>Primary Outcome:</strong> Cultivation of trustworthy, disciplined performers who drive organizational reliability and performance.</p>
+        <div class="text-center mt-4">
+          <a href="/register" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Register for this Program</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal3" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header border-0"><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body p-5">
+        <img src="{{ url_for('static', filename='img/services/service-3.png') }}" class="modal-img-wide">
+        <h2 class="mb-3">AMAL Goal-Setting Framework</h2>
+        <p><strong>The Concept:</strong> Traditional goal setting often fails because it is disconnected from individual and organizational values. The AMAL framework provides a values-driven, action-oriented system to ensure that every objective set is meaningful and every step taken is intentional.</p>
+        <p><strong>Focus:</strong> Values-driven, action-oriented goal setting.</p>
+        <p><strong>Primary Outcome:</strong> Achievement of consistent, measurable progress toward long-term meaningful objectives.</p>
+        <div class="text-center mt-4">
+          <a href="/register" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Register for this Program</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal4" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header border-0"><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body p-5">
+        <img src="{{ url_for('static', filename='img/services/service-4.png') }}" class="modal-img-wide">
+        <h2 class="mb-3">Selling Skills</h2>
+        <p><strong>The Concept:</strong> Move beyond transactional tactics to relationship-based excellence. This module focuses on ethical selling techniques grounded in integrity and empathy, ensuring that every sales interaction adds value and builds a lasting partnership.</p>
+        <p><strong>Focus:</strong> Ethical, relationship-based selling.</p>
+        <p><strong>Primary Outcome:</strong> Growth of sustainable revenue streams and a portfolio of deeply loyal customers.</p>
+        <div class="text-center mt-4">
+          <a href="/register" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Register for this Program</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal5" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header border-0"><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body p-5">
+        <img src="{{ url_for('static', filename='img/services/service-5.png') }}" class="modal-img-wide">
+        <h2 class="mb-3">Customer Relationship Management</h2>
+        <p><strong>The Concept:</strong> Service is an extension of character. This program trains teams in communication excellence and empathy, transforming every customer touchpoint into an opportunity for demonstrating service discipline and building trust.</p>
+        <p><strong>Focus:</strong> Communication excellence, empathy, and service discipline.</p>
+        <p><strong>Primary Outcome:</strong> Significantly higher customer satisfaction rates and long-term retention through service excellence.</p>
+        <div class="text-center mt-4">
+          <a href="/register" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Register for this Program</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal6" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header border-0"><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body p-5">
+        <img src="{{ url_for('static', filename='img/services/service-6.png') }}" class="modal-img-wide">
+        <h2 class="mb-3">Leadership Development</h2>
+        <p><strong>The Concept:</strong> Leadership is the combination of character, clarity, and capability. This program prepares leaders to not just manage systems, but to build sustainable cultures of excellence by modeling the behaviors they wish to see in their teams.</p>
+        <p><strong>Focus:</strong> Combining character, clarity, and capability.</p>
+        <p><strong>Primary Outcome:</strong> Formation of effective leaders capable of nurturing a sustainable, high-performance organizational culture.</p>
+        <div class="text-center mt-4">
+          <a href="/register" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Register for this Program</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal7" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header border-0"><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body p-5">
+        <img src="{{ url_for('static', filename='img/services/service-7.png') }}" class="modal-img-wide">
+        <h2 class="mb-3">HR & Organizational Development</h2>
+        <p><strong>The Concept:</strong> Beyond individual training, organizations need robust systems to sustain excellence. This consulting service partners with leadership to build the structural foundations of a high-performing culture—ensuring every HR process reflects the organization's core values.</p>
+        <p><strong>Key Focus Areas:</strong></p>
+        <ul class="text-start d-inline-block">
+          <li>Developing Job Descriptions</li>
+          <li>Competency-Based Hiring</li>
+          <li>Hiring for Values & Ethics</li>
+          <li>Performance Management Systems</li>
+          <li>Culture & Capability Development</li>
+        </ul>
+        <p class="mt-3"><strong>Primary Outcome:</strong> Structured, ethical, and high-performing people systems.</p>
+        <div class="text-center mt-4">
+          <a href="/register" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Inquire About Consulting</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="consulting" class="consulting-premium">
+  <div class="container" data-aos="fade-up">
+    <div class="row align-items-center">
+
+      <div class="col-lg-5">
+        <h2 class="mb-4">Strategic Consulting</h2>
+        <div class="consulting-card">
+          <p class="lead">Move beyond training. Partner with Binjaz to fundamentally strengthen your leadership, culture, and accountability frameworks.</p>
+          <p>We build structured, ethical, and high-performing people systems that align with your organizational DNA.</p>
+          <a href="/contact" class="cta-consult mt-4">Schedule a Consultation</a>
+        </div>
+      </div>
+
+      <div class="col-lg-6 offset-lg-1">
+        <h4 class="text-teal mb-5 text-center text-uppercase tracking-widest" style="color: #00B3A6; letter-spacing: 3px;">The Binjaz Partnership Method</h4>
+
+        <div class="process-flow">
+          <div class="process-step">
+            <div class="step-circle">01</div>
+            <h6>Assess</h6>
+          </div>
+          <div class="process-step">
+            <div class="step-circle">02</div>
+            <h6>Design</h6>
+          </div>
+          <div class="process-step">
+            <div class="step-circle">03</div>
+            <h6>Implement</h6>
+          </div>
+          <div class="process-step">
+            <div class="step-circle">04</div>
+            <h6>Sustain</h6>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endblock %}
