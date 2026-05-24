@@ -3,4 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/binjazco/binjaz_app
     - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp -R static /home/binjazco/public_html/
     - touch $DEPLOYPATH/tmp/restart.txt
