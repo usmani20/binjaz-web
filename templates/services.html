@@ -71,22 +71,204 @@
         </div>
       </div>
     </div>
-
+    
     <div class="section-title mt-5" data-aos="fade-up">
       <h2>HR & Organizational Development Consultation</h2>
     </div>
 
-    <div class="row gy-5 justify-content-center">
+    <!-- HR Services Grid -->
+    <div class="row gy-5 justify-content-center mb-5">
+      
       <div class="col-lg-4 col-md-6" data-aos="fade-up">
-        <div class="service-card" data-bs-toggle="modal" data-bs-target="#modal7">
-          <img src="{{ url_for('static', filename='img/services/service-7.webp') }}" alt="HR Development">
+        <div class="service-card" data-bs-toggle="modal" data-bs-target="#modal-hr-1">
+          <img src="{{ url_for('static', filename='img/services/hr-service-1.webp') }}" alt="HR Business Process Outsourcing">
           <div class="service-card-body text-center">
-            <h4>HR & Organizational Development Systems</h4>
-            <p>Structured, ethical, and high-performing people systems.</p>
+            <h4>HR Business Process Outsourcing</h4>
+            <p>Complete HR department outsource for efficient HR management.</p>
           </div>
         </div>
       </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card" data-bs-toggle="modal" data-bs-target="#modal-hr-2">
+          <img src="{{ url_for('static', filename='img/services/hr-service-2.webp') }}" alt="Executive Search">
+          <div class="service-card-body text-center">
+            <h4>Executive Search</h4>
+            <p>Competency-based recruitment from Junior to Senior leadership.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card" data-bs-toggle="modal" data-bs-target="#modal-hr-3">
+          <img src="{{ url_for('static', filename='img/services/hr-service-3.webp') }}" alt="Culture & Capability Development">
+          <div class="service-card-body text-center">
+            <h4>Culture & Capability Development</h4>
+            <p>Alignment on strategy, goals, and brand promise.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="service-card" data-bs-toggle="modal" data-bs-target="#modal-hr-4">
+          <img src="{{ url_for('static', filename='img/services/hr-service-4.webp') }}" alt="Organization Redesign">
+          <div class="service-card-body text-center">
+            <h4>Organization Redesign</h4>
+            <p>Evaluating and restructuring as per organizational needs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card" data-bs-toggle="modal" data-bs-target="#modal-hr-5">
+          <img src="{{ url_for('static', filename='img/services/hr-service-5.webp') }}" alt="Employer Branding">
+          <div class="service-card-body text-center">
+            <h4>Employer Branding</h4>
+            <p>Attracting top candidates and driving employee engagement.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card" data-bs-toggle="modal" data-bs-target="#modal-hr-6">
+          <img src="{{ url_for('static', filename='img/services/hr-service-6.webp') }}" alt="Digital Transformation">
+          <div class="service-card-body text-center">
+            <h4>Digital Transformation</h4>
+            <p>Process simplification, automation, and Agentic AI services.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
+</section>
+
+<!-- HR Service Modals (Paste these right below your Training modals, before the Consulting section) -->
+
+<div class="modal fade" id="modal-hr-1" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header border-0"><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body p-5">
+        <img src="{{ url_for('static', filename='img/services/hr-service-1.webp') }}" class="modal-img-wide">
+        <h2 class="mb-3">HR Business Process Outsourcing</h2>
+        <p><strong>The Concept:</strong> We provide complete HR department outsourcing designed to drive highly efficient human resource management, allowing you to focus purely on business growth.</p>
+        <p><strong>Key Focus Areas:</strong></p>
+        <ul>
+          <li>Tailored outsourcing for Small & Medium Enterprises (SMEs).</li>
+          <li>Comprehensive Attendance & Leave management.</li>
+          <li>End-to-end Payroll outsourcing and compliance.</li>
+        </ul>
+        <div class="text-center mt-4">
+          <a href="/contact" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Inquire About Outsourcing</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-hr-2" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header border-0"><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body p-5">
+        <img src="{{ url_for('static', filename='img/services/hr-service-2.webp') }}" class="modal-img-wide">
+        <h2 class="mb-3">Executive Search</h2>
+        <p><strong>The Concept:</strong> Finding the right talent requires more than matching a resume. We offer dedicated executive search services spanning from Junior Executives up to Senior Leadership.</p>
+        <p><strong>Our Approach Includes:</strong></p>
+        <ul>
+          <li>Competency-based recruitment strategies.</li>
+          <li>Hiring strictly for Values, Ethics, and organizational fit.</li>
+          <li>Comprehensive Employee Onboarding frameworks.</li>
+        </ul>
+        <div class="text-center mt-4">
+          <a href="/contact" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Find Top Talent</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-hr-3" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header border-0"><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body p-5">
+        <img src="{{ url_for('static', filename='img/services/hr-service-3.webp') }}" class="modal-img-wide">
+        <h2 class="mb-3">Culture & Capability Development</h2>
+        <p><strong>The Concept:</strong> A company is only as strong as its internal alignment. We assist in the development and strategic rollout of your Mission, Vision, and Brand Promise.</p>
+        <p><strong>Primary Outcome:</strong> Total alignment of internal stakeholders on the organization's strategy and goals, resulting in substantially better employee engagement, deep ownership, and elevated productivity.</p>
+        <div class="text-center mt-4">
+          <a href="/contact" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Develop Your Culture</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-hr-4" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header border-0"><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body p-5">
+        <img src="{{ url_for('static', filename='img/services/hr-service-4.webp') }}" class="modal-img-wide">
+        <h2 class="mb-3">Organization Redesign</h2>
+        <p><strong>The Concept:</strong> As businesses evolve, their structural framework must adapt. We specialize in evaluating and recommending comprehensive organization redesigns tailored specifically to your current operational reality.</p>
+        <p><strong>Scenarios We Manage:</strong></p>
+        <ul>
+          <li>Structural scale-up for rapid Growth.</li>
+          <li>Strategic Retrenchment protocols.</li>
+          <li>Overall operational Restructuring.</li>
+        </ul>
+        <div class="text-center mt-4">
+          <a href="/contact" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Consult on Redesign</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-hr-5" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header border-0"><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body p-5">
+        <img src="{{ url_for('static', filename='img/services/hr-service-5.webp') }}" class="modal-img-wide">
+        <h2 class="mb-3">Employer Branding</h2>
+        <p><strong>The Concept:</strong> Position your company as a premier place to work. Our Employer Branding services are designed to attract a vastly superior pool of candidates while simultaneously boosting internal morale.</p>
+        <p><strong>Programs Include:</strong> Custom Employee Engagement programs, internal pulse surveys, and culture-building activities that solidify your reputation in the job market.</p>
+        <div class="text-center mt-4">
+          <a href="/contact" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Enhance Your Brand</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-hr-6" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header border-0"><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body p-5">
+        <img src="{{ url_for('static', filename='img/services/hr-service-6.webp') }}" class="modal-img-wide">
+        <h2 class="mb-3">Digital Transformation</h2>
+        <p><strong>The Concept:</strong> Modernize your workplace infrastructure to eliminate bottlenecks. We enhance your organization's productivity by introducing advanced technological workflows and seamless digital integration.</p>
+        <p><strong>Key Focus Areas:</strong></p>
+        <ul>
+          <li>Process Simplification & Reengineering.</li>
+          <li>System Automation workflows.</li>
+          <li>Implementation of Agentic AI services to drive autonomous efficiency.</li>
+        </ul>
+        <div class="text-center mt-4">
+          <a href="/contact" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Start Transforming</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
   </div>
 </section>
@@ -102,7 +284,7 @@
         <p><strong>Core Pillars:</strong> Purpose & Intent, Focus of Attention, Horizon of Life, and Humility.</p>
         <p><strong>Primary Outcome:</strong> Transformation into purpose-driven, self-aware individuals who lead with clarity and intent.</p>
         <div class="text-center mt-4">
-          <a href="/contact" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Inquire about the Program</a>
+          <a href="/contact" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Discover Your Core Purpose</a>
         </div>
       </div>
     </div>
@@ -120,7 +302,7 @@
         <p><strong>The Six Elements:</strong> Integrity, Communication, Time Management, Attention to Detail, Ownership, and Healthy Living.</p>
         <p><strong>Primary Outcome:</strong> Cultivation of trustworthy, disciplined performers who drive organizational reliability and performance.</p>
         <div class="text-center mt-4">
-          <a href="/contact" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Inquire about the Program</a>
+          <a href="/contact" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Build High-Performing Habits</a>
         </div>
       </div>
     </div>
@@ -138,7 +320,7 @@
         <p><strong>Focus:</strong> Values-driven, action-oriented goal setting.</p>
         <p><strong>Primary Outcome:</strong> Achievement of consistent, measurable progress toward long-term meaningful objectives.</p>
         <div class="text-center mt-4">
-          <a href="/contact" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Inquire about the Program</a>
+          <a href="/contact" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Master Goal-Setting</a>
         </div>
       </div>
     </div>
@@ -156,7 +338,7 @@
         <p><strong>Focus:</strong> Ethical, relationship-based selling.</p>
         <p><strong>Primary Outcome:</strong> Growth of sustainable revenue streams and a portfolio of deeply loyal customers.</p>
         <div class="text-center mt-4">
-          <a href="/contact" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Inquire about the Program</a>
+          <a href="/contact" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Elevate Your Sales Strategy</a>
         </div>
       </div>
     </div>
@@ -174,7 +356,7 @@
         <p><strong>Focus:</strong> Communication excellence, empathy, and service discipline.</p>
         <p><strong>Primary Outcome:</strong> Significantly higher customer satisfaction rates and long-term retention through service excellence.</p>
         <div class="text-center mt-4">
-          <a href="/contact" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Inquire about the Program</a>
+          <a href="/contact" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Transform Customer Relations</a>
         </div>
       </div>
     </div>
@@ -192,7 +374,7 @@
         <p><strong>Focus:</strong> Combining character, clarity, and capability.</p>
         <p><strong>Primary Outcome:</strong> Formation of effective leaders capable of nurturing a sustainable, high-performance organizational culture.</p>
         <div class="text-center mt-4">
-          <a href="/contact" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Inquire about the Program</a>
+          <a href="/contact" class="btn-get-started" style="background: var(--accent-color); color: #fff; padding: 10px 30px; border-radius: 4px; display: inline-block;">Develop Sustainable Leadership</a>
         </div>
       </div>
     </div>
