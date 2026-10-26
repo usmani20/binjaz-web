@@ -13,6 +13,37 @@
   </div>
 </section>
 
+<!-- Promptev Course Banner -->
+<section class="section my-5 py-5" style="background: linear-gradient(135deg, #0A1F44 0%, #051024 100%); width: 95%; max-width: 1300px; margin: 0 auto; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.3); border: 1px solid rgba(212, 175, 55, 0.2);">
+  <div class="container" data-aos="fade-up">
+    <div class="row align-items-center">
+      
+      <!-- Left Column: Copy & CTA -->
+      <div class="col-lg-7 p-4 p-lg-5 text-start">
+        <span class="badge px-3 py-2 text-uppercase mb-3" style="background: #D4AF37; color: #0A1F44; letter-spacing: 2px; font-weight: bold;">Binjaz × Promptev</span>
+        <h2 class="text-white fw-bold display-5 mb-4">Build AI Agents That Sell.</h2>
+        <p class="text-white-50 lead mb-4">Join our exclusive 4-week "Prompt to Profit" program. Future-proof your career by building real AI agents on Promptev's enterprise infrastructure.</p>
+        
+        <div class="d-flex flex-wrap gap-4 mb-5">
+          <div class="text-white"><i class="bi bi-calendar-check fs-5 me-2" style="color: #00B3A6;"></i>Starts Nov 3</div>
+          <div class="text-white"><i class="bi bi-clock fs-5 me-2" style="color: #00B3A6;"></i>4 Weeks (12 Sessions)</div>
+          <div class="text-white"><i class="bi bi-laptop fs-5 me-2" style="color: #00B3A6;"></i>Live on Google Meet</div>
+        </div>
+        
+        <a href="/prompt-to-profit" class="btn-elite-teal px-5 py-3 rounded-pill fw-bold text-uppercase" style="letter-spacing: 1px;">View Course Details</a>
+      </div>
+
+      <!-- Right Column: Flyer Image -->
+      <div class="col-lg-5 p-4 text-center d-none d-lg-block">
+        <!-- Ensure you upload the flyer to your static/img folder and name it 'promptev-flyer.jpg' -->
+        <img src="{{ url_for('static', filename='img/promptev-flyer.jpg') }}" alt="Prompt to Profit Flyer" class="img-fluid rounded-4 shadow-lg" style="transform: rotate(3deg); transition: transform 0.3s ease; border: 3px solid #00B3A6;" onmouseover="this.style.transform='rotate(0deg)'" onmouseout="this.style.transform='rotate(3deg)'">
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!-- End Promptev Course Banner -->
+
 <section class="philosophy-scroll">
   <div class="container" data-aos="fade-up">
     <span class="guide-line"></span>

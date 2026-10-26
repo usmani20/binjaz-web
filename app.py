@@ -31,6 +31,11 @@ def services():
 def insights():
     return render_template('insights.html')
 
+# 5. PROMPT TO PROFIT COURSE PAGE
+@app.route('/prompt-to-profit') 
+def prompt_to_profit():
+    return render_template('prompt-to-profit.html')
+
 # --- Email Configuration ---
 # --- Elite Titan Email Configuration ---
 app.config['MAIL_SERVER'] = 'smtp.titan.email'
