@@ -13,36 +13,50 @@
   </div>
 </section>
 
-<!-- Promptev Course Banner -->
-<section class="section my-5 py-5" style="background: linear-gradient(135deg, #0A1F44 0%, #051024 100%); width: 95%; max-width: 1300px; margin: 0 auto; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.3); border: 1px solid rgba(212, 175, 55, 0.2);">
-  <div class="container" data-aos="fade-up">
-    <div class="row align-items-center">
-      
-      <!-- Left Column: Copy & CTA -->
-      <div class="col-lg-7 p-4 p-lg-5 text-start">
-        <span class="badge px-3 py-2 text-uppercase mb-3" style="background: #D4AF37; color: #0A1F44; letter-spacing: 2px; font-weight: bold;">Binjaz × Promptev</span>
-        <h2 class="text-white fw-bold display-5 mb-4">Build AI Agents That Sell.</h2>
-        <p class="text-white-50 lead mb-4">Join our exclusive 4-week "Prompt to Profit" program. Future-proof your career by building real AI agents on Promptev's enterprise infrastructure.</p>
-        
-        <div class="d-flex flex-wrap gap-4 mb-5">
-          <div class="text-white"><i class="bi bi-calendar-check fs-5 me-2" style="color: #00B3A6;"></i>Starts Nov 3</div>
-          <div class="text-white"><i class="bi bi-clock fs-5 me-2" style="color: #00B3A6;"></i>4 Weeks (12 Sessions)</div>
-          <div class="text-white"><i class="bi bi-laptop fs-5 me-2" style="color: #00B3A6;"></i>Live on Google Meet</div>
-        </div>
-        
-        <a href="/prompt-to-profit" class="btn-elite-teal px-5 py-3 rounded-pill fw-bold text-uppercase" style="letter-spacing: 1px;">View Course Details</a>
-      </div>
+<!-- ===== Featured: Prompt to Profit (Binjaz × Promptev) ===== -->
+<style>
+  .ptp-feature{background:linear-gradient(135deg,#0A1F44 0%,#051024 100%);width:95%;max-width:1250px;margin:3rem auto;border-radius:18px;border:1px solid rgba(212,175,55,.2);box-shadow:0 10px 25px rgba(0,0,0,.2);padding:3rem 3.25rem;position:relative;overflow:hidden}
+  .ptp-feature::before{content:"";position:absolute;top:-120px;right:-120px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(0,179,166,.18) 0%,rgba(0,179,166,0) 70%);pointer-events:none}
+  .ptp-feature > .row{position:relative;z-index:1}
+  .ptp-feature .ptp-kicker{display:inline-block;background:#D4AF37;color:#0A1F44;letter-spacing:2px;font-weight:700;font-size:.75rem;text-transform:uppercase;padding:.4rem .85rem;border-radius:4px}
+  .ptp-feature .ptp-new{margin-left:.5rem;color:#00B3A6;font-size:.75rem;letter-spacing:2px;text-transform:uppercase;font-weight:700}
+  .ptp-feature h2{color:#fff;font-weight:700;font-size:clamp(1.75rem,3.6vw,2.6rem);line-height:1.2;margin:1rem 0 .75rem}
+  .ptp-feature h2 span{color:#D4AF37;white-space:nowrap}
+  .ptp-feature p{color:rgba(255,255,255,.7);font-size:1.1rem;margin:0 0 1.5rem;max-width:660px}
+  .ptp-feature .ptp-meta{display:flex;flex-wrap:wrap;gap:.6rem 1.75rem;margin:0;padding:0;list-style:none}
+  .ptp-feature .ptp-meta li{color:#fff;font-size:1rem;display:flex;align-items:center}
+  .ptp-feature .ptp-meta i{color:#00B3A6;font-size:1.1rem;margin-right:.5rem}
+  .ptp-feature .ptp-actions{display:flex;flex-direction:column;gap:1rem;align-items:stretch}
+  .ptp-feature .ptp-actions a{text-align:center;margin:0}
+  .ptp-feature .ptp-price{color:rgba(255,255,255,.7);font-size:.95rem;text-align:center;margin-top:.25rem}
+  .ptp-feature .ptp-price strong{color:#D4AF37}
+  @media (max-width:991px){.ptp-feature{padding:2.25rem 1.75rem}.ptp-feature .ptp-actions{margin-top:1.5rem}}
+  @media (max-width:575px){.ptp-feature .ptp-new{display:block;margin:.6rem 0 0}}
+</style>
 
-      <!-- Right Column: Flyer Image -->
-      <div class="col-lg-5 p-4 text-center d-none d-lg-block">
-        <!-- Ensure you upload the flyer to your static/img folder and name it 'promptev-flyer.jpg' -->
-        <img src="{{ url_for('static', filename='img/promptev-flyer.webp') }}" alt="Prompt to Profit Flyer" class="img-fluid rounded-4 shadow-lg" style="transform: rotate(3deg); transition: transform 0.3s ease; border: 3px solid #00B3A6;" onmouseover="this.style.transform='rotate(0deg)'" onmouseout="this.style.transform='rotate(3deg)'">
+<section class="ptp-feature" data-aos="fade-up">
+  <div class="row align-items-center">
+    <div class="col-lg-8">
+      <span class="ptp-kicker">Binjaz × Promptev</span><span class="ptp-new">Prompt to Profit · Now Enrolling</span>
+      <h2>From AI User to <span>AI Builder.</span></h2>
+      <p>A live 4-week program to build real AI agents on Promptev, for leaders, professionals and students alike.</p>
+      <ul class="ptp-meta">
+        <li><i class="bi bi-calendar-check"></i>Starts Nov 3</li>
+        <li><i class="bi bi-clock"></i>12 live sessions</li>
+        <li><i class="bi bi-laptop"></i>Google Meet</li>
+        <li><i class="bi bi-award"></i>Certificate</li>
+      </ul>
+    </div>
+    <div class="col-lg-4">
+      <div class="ptp-actions">
+        <a href="/prompt-to-profit" class="btn-elite-teal">View Course Details</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfGBFpDRf4D0kUl8o760WBf-lzy14UTqD5XBc-bI19OJchMfQ/viewform" target="_blank" rel="noopener" class="btn-elite-outline" style="border-color:#D4AF37;color:#D4AF37;">Reserve Your Seat</a>
+        <div class="ptp-price">From <strong>PKR 15,000</strong> per person</div>
       </div>
-      
-    </div>  
+    </div>
   </div>
 </section>
-<!-- End Promptev Course Banner -->
+<!-- ===== End Featured: Prompt to Profit ===== -->
 
 <section class="philosophy-scroll">
   <div class="container" data-aos="fade-up">

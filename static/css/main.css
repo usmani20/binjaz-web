@@ -2522,3 +2522,18 @@ section,
   margin-left: -1em;
   color: none;
 }
+
+/* Keep button text readable on hover/focus */
+.btn-elite-teal,
+.btn-elite-teal:hover,
+.btn-elite-teal:focus,
+.btn-elite-teal:active,
+.btn-elite-teal:visited {
+  color: #fff !important;
+}
+
+/* Optional: a slightly darker teal on hover so the button still feels clickable */
+.btn-elite-teal:hover,
+.btn-elite-teal:focus {
+  background: #009489;
+}
